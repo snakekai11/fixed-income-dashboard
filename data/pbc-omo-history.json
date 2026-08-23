@@ -1,0 +1,238 @@
+[
+  {
+    "date": "2026-07-27",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 3255
+      }
+    ]
+  },
+  {
+    "date": "2026-07-28",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 3055
+      }
+    ]
+  },
+  {
+    "date": "2026-07-29",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 2065
+      },
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 6000
+      }
+    ]
+  },
+  {
+    "date": "2026-07-30",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 2705
+      },
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 6000
+      }
+    ]
+  },
+  {
+    "date": "2026-07-31",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 1340
+      },
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 6000
+      }
+    ]
+  },
+  {
+    "date": "2026-08-03",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 630
+      },
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3000
+      }
+    ]
+  },
+  {
+    "date": "2026-08-04",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 465
+      }
+    ]
+  },
+  {
+    "date": "2026-08-05",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 50
+      }
+    ]
+  },
+  {
+    "date": "2026-08-06",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "date": "2026-08-07",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 10
+      }
+    ]
+  },
+  {
+    "date": "2026-08-10",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 180
+      }
+    ]
+  },
+  {
+    "date": "2026-08-11",
+    "operations": []
+  },
+  {
+    "date": "2026-08-12",
+    "operations": []
+  },
+  {
+    "date": "2026-08-13",
+    "operations": []
+  },
+  {
+    "date": "2026-08-14",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3490
+      }
+    ]
+  },
+  {
+    "date": "2026-08-17",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 5655
+      }
+    ]
+  },
+  {
+    "date": "2026-08-18",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 4697
+      }
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3274
+      }
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "operations": []
+  },
+  {
+    "date": "2026-08-21",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 950
+      }
+    ]
+  }
+]

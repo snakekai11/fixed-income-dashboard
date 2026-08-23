@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: fixed-income-dashboard
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm run check
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeployTrigger: commit
+    envVars:
+      - key: NODE_VERSION
+        value: 22

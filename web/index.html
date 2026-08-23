@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>固收综合看板 · 流动性与债券市场</title>
+<link rel="stylesheet" href="styles.css">
+<script src="chart.umd.min.js"></script>
+<script>window.Chart || document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"><\/script>')</script>
+</head>
+<body>
+<div class="container">
+  <header class="masthead">
+    <h1>货币市场行情</h1>
+    <div class="date-badge" id="trade-date">加载中…</div>
+  </header>
+  <div class="meta-line" id="meta-line"></div>
+  <div class="toolbar"><span class="live-dot"></span><span id="source-badge">公开数据源</span><button id="refresh-btn" title="立即刷新公开数据">↻ 刷新数据</button></div>
+  <div id="notice-slot"></div>
+  <nav class="sheet-tabs" aria-label="数据页面"><button class="sheet-tab active" data-sheet="liquidity">资金面</button><button class="sheet-tab" data-sheet="bonds">债券行情</button><button class="sheet-tab" data-sheet="news">宏观资讯</button></nav>
+
+  <main id="sheet-liquidity" class="sheet active">
+
+  <section class="card" id="omo-card">
+    <div class="card-header">央行公开市场操作情况</div>
+    <div class="card-body">
+      <p class="omo-text" id="omo-text"></p>
+      <div id="omo-structure"></div>
+      <div class="chart-wrap" style="margin-top:14px"><canvas id="omo-chart"></canvas></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">当日回购成交情况（银行间）</div>
+    <div class="card-body" id="repo-tables"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">上海银行间同业拆放利率（Shibor）</div>
+    <div class="card-body" id="shibor-table"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">当日同业拆借成交情况（银行间）</div>
+    <div class="card-body" id="ibo-table"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">当日回购成交情况（交易所）</div>
+    <div class="card-body" id="exchange-table"></div>
+  </section>
+
+  <section class="card">
+    <div class="card-header">利率走势（近40个交易日）</div>
+    <div class="card-body">
+      <div class="chips" id="trend-chips"></div>
+      <div class="chart-wrap"><canvas id="trend-chart"></canvas></div>
+    </div>
+  </section>
+
+  </main>
+
+  <main id="sheet-bonds" class="sheet">
+    <section class="card">
+      <div class="card-header">债券收益率曲线综合屏</div>
+      <div class="card-body" id="yield-matrix"></div>
+    </section>
+    <section class="card">
+      <div class="card-header">债市二级 · 活跃现券</div>
+      <div class="card-body" id="bond-secondary"></div>
+    </section>
+    <section class="card">
+      <div class="card-header">国债期货 · 连续合约</div>
+      <div class="card-body" id="bond-futures"></div>
+    </section>
+  </main>
+
+  <main id="sheet-news" class="sheet">
+    <section class="card">
+      <div class="card-header">近期宏观资讯热榜</div>
+      <div class="card-body"><div class="news-filters" id="news-filters"></div><div id="macro-news"></div></div>
+    </section>
+  </main>
+
+  <footer id="footer-source"></footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

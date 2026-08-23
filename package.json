@@ -1,0 +1,14 @@
+{
+  "name": "fixed-income-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "refresh": "node scripts/public_fetch.mjs",
+    "check": "node --check scripts/serve.mjs && node --check scripts/public_fetch.mjs && node --check web/app.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
