@@ -4,3 +4,4 @@ share-tunnel*.log
 tmp*.html
 tmp*.js
 *.log
+dist/

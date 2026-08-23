@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "refresh": "node scripts/public_fetch.mjs",
-    "check": "node --check scripts/serve.mjs && node --check scripts/public_fetch.mjs && node --check web/app.js"
+    "check": "node --check scripts/serve.mjs && node --check scripts/public_fetch.mjs && node --check scripts/build_static.mjs && node --check web/app.js",
+    "build:static": "node scripts/build_static.mjs"
   },
   "engines": {
     "node": ">=20"

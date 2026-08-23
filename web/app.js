@@ -242,8 +242,15 @@
     document.querySelector('.masthead h1').textContent = tab.dataset.sheet === 'bonds' ? '债券行情综合屏' : tab.dataset.sheet === 'news' ? '近期宏观资讯' : '货币市场行情';
   }));
   document.querySelector('#refresh-btn')?.addEventListener('click', async (e) => {
-    const b = e.currentTarget; b.disabled = true; b.textContent = '↻ 更新中…';
-    try { await fetch('/api/refresh', { method: 'POST' }); await boot(); } finally { b.disabled = false; b.textContent = '↻ 刷新数据'; }
+    const b = e.currentTarget; b.disabled = true; b.textContent = '↻ 同步中…';
+    try {
+      const response = await fetch('/api/refresh', { method: 'POST' });
+      if (!response.ok && response.status !== 404) throw new Error('refresh unavailable');
+    } catch {} finally {
+      await boot();
+      b.disabled = false;
+      b.textContent = '↻ 同步最新数据';
+    }
   });
   boot();
 })();
