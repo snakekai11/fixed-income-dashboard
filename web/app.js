@@ -215,7 +215,7 @@
     while (charts.length) { try { charts.pop().destroy(); } catch {} }
     let data;
     try {
-      const res = await fetch('../data/latest.json?_=' + Date.now());
+      const res = await fetch('./data/latest.json?_=' + Date.now());
       data = await res.json();
     } catch (e) {
       $('#notice-slot').innerHTML = '<div class="notice warn">未找到 <code>data/latest.json</code>。请通过 <code>启动网站.cmd</code> 访问本站，或先运行取数脚本。</div>';

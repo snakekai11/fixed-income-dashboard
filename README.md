@@ -31,3 +31,5 @@
 项目包含 `render.yaml`，可在 Render 通过 Blueprint 或 Web Service 发布。选择 Free 方案后，Build Command 使用 `npm run check`，Start Command 使用 `npm start`，健康检查地址为 `/api/health`。服务每次启动时自动刷新，运行期间每四小时刷新一次，也可从页面手动刷新。免费实例空闲后可能休眠，第一次访问需要等待唤醒。
 
 无需银行卡的部署方式使用 Render Static Site：Build Command 为 `npm run build:static`，Publish Directory 为 `dist`。GitHub Actions 在工作日北京时间 09:00、11:40、15:30、17:45 从免费公开源更新并提交数据，Render 随提交自动发布。静态页面的“同步最新数据”按钮读取最近一次云端发布结果，不会直接启动服务器取数。
+
+GitHub Pages 无需银行卡，公开仓库后由 `.github/workflows/deploy-pages.yml` 自动构建并发布。项目网址为 `https://snakekai11.github.io/fixed-income-dashboard/`，数据更新提交会自动触发重新发布。
