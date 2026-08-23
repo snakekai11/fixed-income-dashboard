@@ -187,6 +187,9 @@ async function updateMacroNews() {
   } catch (error) {
     messages.push('财联社资讯更新失败：' + error.message);
   }
+  for (const item of payload.macroNews || []) {
+    if (!activeSources.has(item.source)) all.push(item);
+  }
   const unique = new Map();
   for (const item of all) {
     const key = item.title.replace(/[，。！？：；、\s]/g, '').slice(0, 48);
@@ -197,7 +200,7 @@ async function updateMacroNews() {
     .sort((a, b) => b.score - a.score || b.timestamp - a.timestamp)
     .filter(item => { const count = sourceCounts.get(item.source) || 0; sourceCounts.set(item.source, count + 1); return count < 18; })
     .slice(0, 30);
-  if (payload.macroNews.length) refreshed.push({ label: '宏观资讯', date: payload.macroNews[0].publishedAt.slice(0, 10), source: [...activeSources].map(name => name + '公开资讯').join(' / ') });
+  if (payload.macroNews.length && activeSources.size) refreshed.push({ label: '宏观资讯', date: payload.macroNews[0].publishedAt.slice(0, 10), source: [...activeSources].map(name => name + '公开资讯').join(' / ') });
 }
 
 function upsertSeries(groupId, label, points, source) {
