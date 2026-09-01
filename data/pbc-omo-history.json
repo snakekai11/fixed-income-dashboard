@@ -308,5 +308,24 @@
         "amount": 3330
       }
     ]
+  },
+  {
+    "date": "2026-08-31",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 50
+      },
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 4470
+      }
+    ]
   }
 ]
