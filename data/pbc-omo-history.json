@@ -354,5 +354,33 @@
   {
     "date": "2026-09-03",
     "operations": []
+  },
+  {
+    "date": "2026-09-04",
+    "operations": []
+  },
+  {
+    "date": "2026-09-07",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 5
+      }
+    ]
+  },
+  {
+    "date": "2026-09-08",
+    "operations": [
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": 1.4,
+        "amount": 10
+      }
+    ]
   }
 ]
