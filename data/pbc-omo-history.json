@@ -891,5 +891,72 @@
         "amount": 1820
       }
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 1900
+      }
+    ]
+  },
+  {
+    "date": "2026-11-11",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 1870
+      }
+    ]
+  },
+  {
+    "date": "2026-11-12",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3840
+      }
+    ]
+  },
+  {
+    "date": "2026-11-13",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3640
+      },
+      {
+        "instrument": "逆回购",
+        "tenorLabel": "7天期",
+        "tenorDays": 7,
+        "rate": null,
+        "amount": 3000
+      }
+    ]
+  },
+  {
+    "date": "2026-11-16",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 4600
+      }
+    ]
   }
 ]
