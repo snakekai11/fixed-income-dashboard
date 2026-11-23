@@ -982,5 +982,41 @@
         "amount": 7002
       }
     ]
+  },
+  {
+    "date": "2026-11-19",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 7675
+      }
+    ]
+  },
+  {
+    "date": "2026-11-20",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 3795
+      }
+    ]
+  },
+  {
+    "date": "2026-11-23",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 4995
+      }
+    ]
   }
 ]
