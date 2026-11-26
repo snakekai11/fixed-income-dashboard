@@ -1042,5 +1042,17 @@
         "amount": 6170
       }
     ]
+  },
+  {
+    "date": "2026-11-26",
+    "operations": [
+      {
+        "instrument": "隔夜逆回购",
+        "tenorLabel": "隔夜",
+        "tenorDays": 1,
+        "rate": null,
+        "amount": 5715
+      }
+    ]
   }
 ]
